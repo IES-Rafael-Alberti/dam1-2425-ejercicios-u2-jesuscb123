@@ -20,15 +20,14 @@ def comprobar_entero(edad: str):
     
 
 
-def introduce_edad(edad):
+def introduce_edad():
     edad = input("Introduce tu edad: ")
     return edad
 
 
 def main():
     MAYOR_EDAD = 18
-    edad = 0
-    edad = introduce_edad(edad)
+    edad = introduce_edad()
     while not comprobar_entero(edad):
         edad = MENSAJE_ERROR(edad)
     edad = int(edad)
