@@ -5,7 +5,7 @@ def comprobar_si_supera_18(edad, MAYOR_EDAD):
         return True
     else:
         return False
-
+    
 def MENSAJE_ERROR(edad):
     edad = input("ERROR INTRODUCE UNA EDAD VALIDA: ")
     return edad

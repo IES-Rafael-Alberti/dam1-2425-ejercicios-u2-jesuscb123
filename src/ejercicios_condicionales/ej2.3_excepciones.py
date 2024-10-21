@@ -10,14 +10,14 @@ def division(num1,num2):
     
 
 def introduce_numero():
-    flag = False
-    while flag == False: 
+    num_incorrecto = False
+    while not num_incorrecto:
         try:
             num1 = input("Introduce un número: ")
             num1 = int(num1)
             num2 = input("Introduce un número: ")
             num2 = int(num2)
-            flag = True
+            num_incorrecto = True
         except ValueError:
             print("ERROR!!! Introduce un número válido.")
     return num1,num2

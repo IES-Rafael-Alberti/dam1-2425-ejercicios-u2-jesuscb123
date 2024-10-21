@@ -2,22 +2,18 @@
 
 def comprobar_si_coincide(contraseña_usuario, CONTRASEÑA_ALMACENADA):
     if contraseña_usuario == CONTRASEÑA_ALMACENADA:
-        return True
+        return "Contraseña correcta"
     else: 
-        False
+       return "Contraseña incorrecta"
 
-def pedir_contraseña(contraseña_usuario):
+def pedir_contraseña():
     contraseña_usuario = (input("Introduce una contraseña: "))
     return contraseña_usuario
 
 def main():
-    contraseña_usuario = None
     CONTRASEÑA_ALMACENADA = "contraseña"
-    contraseña_usuario = pedir_contraseña(contraseña_usuario)
-    if not comprobar_si_coincide(contraseña_usuario,CONTRASEÑA_ALMACENADA):
-        print("No coincide")
-    else: 
-        print ("Si coincide")
+    contraseña_usuario = pedir_contraseña()
+    print(comprobar_si_coincide(contraseña_usuario, CONTRASEÑA_ALMACENADA))
 
 if __name__ == "__main__":
     main()

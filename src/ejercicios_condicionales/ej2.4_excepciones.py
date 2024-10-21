@@ -15,7 +15,7 @@ def introducir_numero():
             num = input("Introduce número: ")
             num = int(num)
             flag = True
-        except: 
+        except ValueError: 
             print("EL NÚMERO DEBE SER ENTERO: ")
     return num
         
