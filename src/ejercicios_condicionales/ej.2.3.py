@@ -7,6 +7,13 @@ def division(num1,num2):
         division = num1 / num2
     return division
 
+def comprobar_entero(edad: str):
+    if edad.startswith("-"):
+       edad = edad[1:]
+    elif edad.count(".") > 1:
+        return False 
+    edad = edad.strip()
+    return edad.isdigit()
 
 def introducir_numero()-> int:
     num1 = int(input("Introduce un número: "))

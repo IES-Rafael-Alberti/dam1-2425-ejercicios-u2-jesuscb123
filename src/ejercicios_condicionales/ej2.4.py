@@ -6,8 +6,21 @@ def par_impar(num):
     else:
         return f"El {num} es impar"
     
+
+def comprobar_entero(num: str):
+    if num.startswith("-"):
+       num = num[1:]
+    elif num.count(".") > 1:
+        return False 
+    num = num.strip()
+    return num.isdigit()
+
+
 def introducir_numero():
-    num = int(input("Introduce un número para saber si es par o impar: "))
+    num = input("Introduce un número para saber si es par o impar: ")
+    while not comprobar_entero(num):
+        num = input("Introduce un número válido: ")
+    num = int(num)
     return num
 
 

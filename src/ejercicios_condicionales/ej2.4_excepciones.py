@@ -9,12 +9,12 @@ def parimpar(num : int):
         return "Impar"
 
 def introducir_numero():
-    flag = False
-    while flag == False:
+    numero_correcto = False
+    while not numero_correcto:
         try:
             num = input("Introduce número: ")
             num = int(num)
-            flag = True
+            numero_correcto = True
         except ValueError: 
             print("EL NÚMERO DEBE SER ENTERO: ")
     return num
@@ -25,3 +25,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    
