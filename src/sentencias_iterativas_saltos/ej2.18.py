@@ -3,10 +3,9 @@
 
 def comprobar_si_es_par(numero):
     if (numero % 2) == 0:
-        return numero
-
-
-
+        return f"{numero}, "
+    else:
+        return ""
 
 def suma_digitos(numero):
     serie = ""
@@ -24,8 +23,6 @@ def introduce_numero():
     while not numero_correcto:
         try:
             numero = int(input("Introduce un número: "))
-            if numero == -1:
-                numero = str(numero)
             numero_correcto = True
         except ValueError:
             print("ERROR, INTRODUCE UN NÚMERO ENTERO.")
@@ -34,13 +31,14 @@ def introduce_numero():
 
 
 def main():
+    numeros_pares = " "
     numero = introduce_numero()
-    while not numero == "-1":
+    while not numero == -1:
         suma_digitos(numero)
-        if comprobar_si_es_par:
-            
+        numeros_pares += f"{comprobar_si_es_par(numero)}"
         numero = introduce_numero()
-        
+    print(numeros_pares)
+    
     
 
 
