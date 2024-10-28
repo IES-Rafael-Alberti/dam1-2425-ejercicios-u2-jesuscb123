@@ -1,7 +1,6 @@
 
 
 
-
 def comprobar_entero(num_entero):
         try:
             num_entero = int(num_entero)
@@ -16,19 +15,9 @@ def introducir_numero():
 
 
 
-
-
-
 def main():
     num_entero = introducir_numero()
     comprobar_entero(num_entero)
-
-
-
-
-
-
-
 
 
 
