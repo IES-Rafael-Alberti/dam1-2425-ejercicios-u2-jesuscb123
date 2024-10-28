@@ -1,12 +1,16 @@
 #Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es mayor de edad o no.
 
+
+
+"""
+la función comprobar_si_supera_18 retornará True o False dependiendo de si es mayor o igual que 18 o no.
+"""
 def comprobar_si_supera_18(edad, MAYOR_EDAD):
     if edad >= MAYOR_EDAD:
         return True
     else:
         return False
 
-    
 def MENSAJE_ERROR(edad):
     edad = input("ERROR INTRODUCE UNA EDAD VALIDA: ")
     return edad
@@ -25,6 +29,9 @@ def introduce_edad():
     edad = input("Introduce tu edad: ")
     return edad
 
+"""
+Si comprobar 18 retorna True será mayor de 18 sino será menor.
+"""
 
 def main():
     MAYOR_EDAD = 18

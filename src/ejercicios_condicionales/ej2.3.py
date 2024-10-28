@@ -1,5 +1,8 @@
 #Escribir un programa que pida al usuario dos números y muestre por pantalla su división. Si el divisor es cero el programa debe mostrar un error. 
 
+"""
+La función division se agura que el segundo número no sea 0, en el caso de que si lo sea retornará un error, sino, hará la división y retornará el resultado.
+"""
 def division(num1,num2):
     if num2 == 0:
         return "ERROR, NO ES POSIBLE DIVIDIR POR 0."

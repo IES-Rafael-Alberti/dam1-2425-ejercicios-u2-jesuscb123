@@ -11,9 +11,7 @@ def introducir_palabra():
         frase_usuario = input("Introduce una frase o di salir para acabar: ")
         return frase_usuario
        
-        
-
-
+    
 
 
 def main():

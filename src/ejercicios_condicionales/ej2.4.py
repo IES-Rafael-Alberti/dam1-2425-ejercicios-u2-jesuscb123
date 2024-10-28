@@ -1,5 +1,9 @@
 #Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.
 
+
+"""
+La función par_impar comparará el resto de la división entre 2. Si el resto es igual a 0 será par, sino sera impar.
+"""
 def par_impar(num):
     if (num % 2) == 0:
         return f"El número {num} es par"
