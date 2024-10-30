@@ -1,7 +1,14 @@
 #Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.
 
 
-def parimpar(num : int):
+def parimpar(num : int)->str:
+    """
+    Comprueba si num es par o impar. Si el resto de la división entre 2 da 0 es par sino es impar.
+    Args:
+    num(int): número introducido por el usuario.
+    Returns:
+    par o impar (str)
+    """
     resto = num % 2
     if resto == 0:
         return "Par"
@@ -9,6 +16,14 @@ def parimpar(num : int):
         return "Impar"
 
 def introducir_numero():
+    """
+    Permite al usuario introducir una cadena de texto y luego comprueba que sea un número.
+    Args:
+    num(str): dividendo introducido por el usuario.
+    Returns:
+    num(int)
+    
+    """
     numero_correcto = False
     while not numero_correcto:
         try:

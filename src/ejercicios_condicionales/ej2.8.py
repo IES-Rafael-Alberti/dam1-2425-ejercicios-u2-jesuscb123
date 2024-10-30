@@ -6,7 +6,19 @@ Meritorio	0.6 o más
 """
 #Escribir un programa que lea la puntuación del usuario e indique su nivel de rendimiento, así como la cantidad de dinero que recibirá el usuario.
 
-def mostrar_nivel_cantidad(puntuacion: float): #El dinero recibido se multiplica por el nivel y luego se suma al dinero base.
+def mostrar_nivel_cantidad(puntuacion: float)->str: #El dinero recibido se multiplica por el nivel y luego se suma al dinero base.
+    """
+    Mostrará el nivel y la cantidad de dinero que ganará.
+    Nivel	Puntuación
+    Inaceptable	0.0
+    Aceptable	0.4
+    Meritorio	0.6 o más
+    Args:
+    puntuación(float): puntuación introducida por el usuario.
+    dinero recibido(float): dinero que recibe según la puntuación.
+    Returns:
+    Una cadena de texto que indique el nivel y la cantidad de dinero recibida.
+    """
     dinero_recibido = (2400 * puntuacion) + 2400
     if puntuacion == 0.0 or puntuacion < 0.4:
         return f"Tu nivel es inaceptable. La cantidad de dinero es: 2400"
@@ -18,7 +30,14 @@ def mostrar_nivel_cantidad(puntuacion: float): #El dinero recibido se multiplica
 
 
 
-def introducir_puntuacion():
+def introducir_puntuacion()->int:
+    """
+    Permite introducir una puntuación.
+    Args:
+    puntuacion(int): introduce una puntuación.
+    Returns:
+    puntuacion(int)
+    """
     puntuacion_correcta = False
     while not puntuacion_correcta:
         try:

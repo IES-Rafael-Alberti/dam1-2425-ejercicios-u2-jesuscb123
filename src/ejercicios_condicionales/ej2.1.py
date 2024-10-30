@@ -2,20 +2,41 @@
 
 
 
-"""
-la función comprobar_si_supera_18 retornará True o False dependiendo de si es mayor o igual que 18 o no.
-"""
-def comprobar_si_supera_18(edad, MAYOR_EDAD):
+def comprobar_si_supera_18(edad: int, MAYOR_EDAD: int)->bool:
+    
+    """
+    la función comprobar_si_supera_18 retornará True o False dependiendo de si es mayor o igual que 18 o no.
+
+    Args:
+    edad(int): edad introducida por el usuario.
+    MAYOR_EDAD(int): edad constante, en este caso, 18.
+    R
+    """
     if edad >= MAYOR_EDAD:
         return True
     else:
         return False
 
-def MENSAJE_ERROR(edad):
+def MENSAJE_ERROR(edad: int)->int:
+    """
+    Esta función mostrará el mensaje de error si la edad no es válida.
+
+    Args:
+    edad (int): Edad introducidad por el usuario.
+
+    Returns: 
+    int: Edad correcta.
+    """
     edad = input("ERROR INTRODUCE UNA EDAD VALIDA: ")
     return edad
 
-def comprobar_entero(edad: str):
+def comprobar_entero(edad: str)->int:
+    """
+    Comprobará si el número introducido por el usuario es un número, si lo es, lo convierte en int.
+    Args:
+    edad(str): cadena de texto introducida por el usuario
+    Returns: edad transformada en int.
+    """
     if edad.startswith("-"):
        edad = edad[1:]
     elif edad.count(".") > 1:
@@ -25,13 +46,9 @@ def comprobar_entero(edad: str):
     
 
 
-def introduce_edad():
+def introduce_edad()->str:
     edad = input("Introduce tu edad: ")
     return edad
-
-"""
-Si comprobar 18 retorna True será mayor de 18 sino será menor.
-"""
 
 def main():
     MAYOR_EDAD = 18
