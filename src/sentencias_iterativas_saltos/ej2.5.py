@@ -8,7 +8,14 @@ cantidad *= 1 + interest / 100
 # - interest: Interes porcentual anual 
 """
 
-def calcular_capital(inversion,interes_anual,n_anos):
+def calcular_capital(inversion: int,interes_anual: int,n_anos: int)->str:
+    """
+     Calcula el capital anual multiplicando la inversión por 1 + por el interés anual entre 100. Luego irá calculando la inversión por cada año desde el primer año hasta el número de años introducido y los irá mostrado uno por uno.
+     Args:
+     inversion: inversión introducida por el usuario.
+     interes_anual: interes introducido por el usuario.
+     n_años: número de años introducido por el usuario.
+    """
     inversion *= 1 + interes_anual / 100
     año = 0
     for i in range (n_anos): 

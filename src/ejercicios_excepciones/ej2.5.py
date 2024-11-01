@@ -3,7 +3,7 @@
 
 def comprobar_si_coincide(contraseña_usuario: str, CONTRASEÑA_ALMACENADA: str)->str:
         """
-    Comprueba si la contrasña introducida por el usuario coincide con la contraseña almacenada.
+    Comprueba si la contraseña introducida por el usuario coincide con la contraseña almacenada.
     Args:
     contraseña_usuario(str): cadena de caracteres introducida por el usuario.
     CONTRASEÑA_ALMACENADA(str): cadena de caracteres guardada.

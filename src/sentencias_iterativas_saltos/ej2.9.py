@@ -3,7 +3,13 @@ CONTRASEÑA_ALMACENADA = "contraseña"
 
 
 
-def comprobar_si_es_correcta(contraseña_usuario,CONTRASEÑA_ALMACENADA: str):
+def comprobar_si_es_correcta(contraseña_usuario,CONTRASEÑA_ALMACENADA: str)->str:
+    """
+    Comprueba si la contraseña introducida por el usuario coincidice con la contraseña almacenada. Si no coincide mostrará un error hasta que introduzca la que coincide.
+    Args:
+    contrasela_usuario: contraseña introducida por el usuario.
+    CONTRASEÑA_ALMACENADA: contraseña que se almacena para comparar si coincide o no.
+    """
     while contraseña_usuario != CONTRASEÑA_ALMACENADA:
         contraseña_usuario = input("ERROR, LA CONTRASEÑA NO ES CORRECTA, VUELVE A INTENTARLO: ")
     return "CONTRASEÑA CORRECTA"

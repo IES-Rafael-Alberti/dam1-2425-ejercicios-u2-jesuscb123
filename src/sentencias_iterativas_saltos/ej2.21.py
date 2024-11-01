@@ -6,12 +6,12 @@ def descuento (total: float)->float:
     total_descontado = total - descuento 
     return total_descontado
 
-def total_a_pagar(compras,numero):
+def total_a_pagar(compras: int,numero: int)->int:
     total = compras + numero
     return total
 
 
-def introduce_numero():
+def introduce_numero()->int:
     numero_correcto = False
     while not numero_correcto:
         try:

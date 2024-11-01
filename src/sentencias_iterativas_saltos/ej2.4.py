@@ -2,6 +2,13 @@
 
 
 def mostrar_cuenta_atras(numero_entero):
+    """
+    Muestra la cuenta atrás desde el número hasta 0.
+    Args: 
+    número_entero: número introducido por el usuario.
+    Returns:
+    serie: números desde número entero hasta 0 separados por ",".
+    """
     serie = f"{numero_entero},"
     while (numero_entero) > 0:
             numero_entero = numero_entero - 1
@@ -15,6 +22,13 @@ def mostrar_cuenta_atras(numero_entero):
 
 
 def comprobar_si_es_positivo(numero_entero):
+    """
+    Determina si un número es positivo o no.
+    Args:
+    número entero = número introducido por el usuario.
+    Returns:
+    True o False.
+    """
     if numero_entero < 0:
         return False
     return True

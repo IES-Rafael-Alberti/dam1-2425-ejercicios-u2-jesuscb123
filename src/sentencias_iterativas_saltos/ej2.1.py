@@ -1,7 +1,12 @@
 #Escribir un programa que pida al usuario una palabra y la muestre por pantalla 10 veces.
 
 
-def repetir_palabra(palabra):
+def repetir_palabra(palabra: str)->str:
+    """
+    Repite la palabra introducida por el usuario 10 veces.
+    Args:
+    palabra(str): palabra introducida por el usuario.
+    """
     for i in range(10):
         print(palabra)
 

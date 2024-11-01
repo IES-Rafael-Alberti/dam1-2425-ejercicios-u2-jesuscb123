@@ -3,8 +3,15 @@
 
 
 def mostrar_letra(palabra,letra: str):
-    letra_contada = palabra.count(letra)
-    print(letra_contada)
+    """
+    Cuenta el número de veces que encuentra la letra introducida en la palabra introducida. 
+    Args:
+    letra_coincide: almacena el número de veces que encuentra la letra en la palabra.
+    palabra: palabra introducida por el usuario.
+    letra: letra introducida por el usuario.
+    """
+    letra_coincide = palabra.count(letra)
+    print(letra_coincide)
 
 def introducir_palabra():
     palabra = input("Introduce una palabra: ")
