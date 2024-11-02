@@ -3,6 +3,11 @@
         
 
 def introduce_numero():
+    """
+    Mientras el número no sea un entero, seguirá pidiendo un número. Una vez ingresado un entero correcto, saldrá de la función.
+    Args:
+    numero: número introducido por el usuario.
+    """
     numero_correcto = False
     while not numero_correcto:
         try:
@@ -13,6 +18,10 @@ def introduce_numero():
     return numero
 
 def main():
+    """
+    Mientras que numero introducido no sea 0, seguirá pidiendo números y acumulandolo a la variable suma. Una vez introduzca el 0, el programa finaliza de manera controlada mostrando la suma de todos los números introducidos.
+    
+    """
     suma = 0
     numero = None
     while numero != 0:

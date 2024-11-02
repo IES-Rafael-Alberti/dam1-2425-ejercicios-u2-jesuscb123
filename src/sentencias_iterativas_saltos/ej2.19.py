@@ -4,15 +4,12 @@ import time
 import os
 
 
-def opcion3(opcion_usuario):
-    return "Se ha interrumpido la impresión. Programa finalizado."
-    
-def opcion2(opcion_usuario):
-    return "Imprimiendo listado.."
-def opcion1(opcion_usuario):
-    return "El programa ha comenzado"
-
 def introducir_opcion():
+    """
+    Mientras el número no sea un entero o sea menor que 0 o mayor que 3, seguirá pidiendo un número. Una vez ingresado un entero correcto, saldrá de la función.
+    Args:
+    numero: número introducido por el usuario.
+    """
     opcion_correcta = False
     while not opcion_correcta:
         try:
@@ -27,19 +24,25 @@ def introducir_opcion():
 
 
 def main():
+
+    """
+    Te permite elegir entre 3 opciones. Si el usuario introduce la opción 1: comenzará el programa, si introduce 2: imprimirá listado y si elige 3: el programa finaliza de manera controlada indicando que el programa habrá terminado.
+    Args:
+    opcion_usuario: número que introduce el usuario indicando la opción elegida.
+    """
     opcion_usuario = 0
     while not opcion_usuario == 3:
         print("Opción 1: Comenzar programa\n Opción 2: Imprimir listado\n Opción 3: finalizar programa")
         opcion_usuario = introducir_opcion()
         if opcion_usuario == 1:
-            print(opcion1(opcion_usuario))
+            print("El programa ha comenzado.")
             time.sleep(3)
             os.system("cls")
         elif opcion_usuario == 2:
-            print(opcion2(opcion_usuario))
+            print("Imprimiendo listado...")
             time.sleep(3)
             os.system("cls")
-    print(opcion3(opcion_usuario))
+    print("El programa ha finalizado.")
 
 
 

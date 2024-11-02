@@ -2,9 +2,12 @@
 
 
 def eco(frase_usuario: str):
-        lista_palabras = frase_usuario.split()
-        for eco in (lista_palabras):
-             return f"{eco}... {eco}..."
+        """
+        Repite la frase del usuario como si fuera un eco.
+        Args:
+        frase_usuario: frase introducida por el usuario.
+        """
+        return f"{frase_usuario}... {frase_usuario}..."
         
 
 def introducir_palabra():
@@ -15,6 +18,9 @@ def introducir_palabra():
 
 
 def main():
+    """
+    Organiza el flujo del programa, mientras que el usuario no introduzca la palabra "salir" seguirá el flujo repitiendose el eco. Una vez que introduzca salir el programa finalizará de forma controlada.
+    """
     frase_usuario = introducir_palabra()
     salir = False
     while not salir: 
