@@ -16,7 +16,7 @@ def mostrar_cuenta_atras(numero_entero):
                 serie += str(numero_entero) + ","
             else:
                  serie += str(numero_entero) + "."
-    print(serie)
+    return serie
 
 
 
@@ -41,7 +41,7 @@ def introduce_numero():
 
 def main():
     numero_entero = introduce_numero()
-    mostrar_cuenta_atras(numero_entero)
+    print(mostrar_cuenta_atras(numero_entero))
 
 
 if __name__ == "__main__":
