@@ -2,14 +2,14 @@
 
 
 def triangulo_numerico(numero):
-    filas_mostradas = ""
     serie_filas = ""
+    serie_cuenta_atras = ""
     for columnas in range(1,numero + 1,2):
-        if columnas == 1:
-            print(columnas)
-        else:
-            for filas in range(columnas - 2, -1, -2):
-            
+        for filas in range(columnas - 2, -1, -2):
+            serie_cuenta_atras += str(filas) + " "
+        serie_filas = f"{columnas} " + serie_cuenta_atras
+        serie_cuenta_atras = ""
+        print(serie_filas)
 
 
 def introduce_numero():
