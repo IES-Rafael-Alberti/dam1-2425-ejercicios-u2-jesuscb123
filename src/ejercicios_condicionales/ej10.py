@@ -27,7 +27,7 @@ def vegetariana(elige_ingrediente: str)->str:
         "Tu pizza es vegetariana. Ingredientes básicos: mozzarella y tomate. Ingrediente elegido: {elige_ingrediente}"
         """
         elige_ingrediente = input("Elige un ingrediente: pimiento, tofu: ")
-        while not (elige_ingrediente == "tofu" or not elige_ingrediente == "pimiento"):
+        while not (elige_ingrediente == "tofu" or elige_ingrediente == "pimiento"):
          elige_ingrediente = input("ERROR, INTRODUCE UN INGREDIENTE VÁLIDO: ")
         return f"Tu pizza es no vegetariana. Ingredientes básicos: mozzarella y tomate. Ingrediente elegido: {elige_ingrediente}"
     
